@@ -22,4 +22,4 @@ module "nome_modulo" {
 | btp-subaccount-creation           | Crea un subaccount SAP BTP                                    | [regesta.devops.terraform.modules.btp-subaccount-creation](https://github.com/RegestaItalia/regesta.devops.terraform.modules.btp-subaccount-creation) |
 | cf-build-and-deploy-mta           | Gestione build e deploy di applicazioni MTA su Cloud Foundry   | [regesta.devops.terraform.modules.cf-build-and-deploy-mta](https://github.com/RegestaItalia/regesta.devops.terraform.modules.cf-build-and-deploy-mta) |
 | cf-space-creation                 | Crea uno space Cloud Foundry e assegna utenti                 | [regesta.devops.terraform.modules.cf-space-creation](https://github.com/RegestaItalia/regesta.devops.terraform.modules.cf-space-creation) |
-| sap-idp-users-provisioning        | Gestione utenti e gruppi su SAP Identity Provider via SCIM
+| sap-idp-users-provisioning        | Gestione utenti e gruppi su SAP Identity Provider via SCIM    | [regesta.devops.terraform.modules.sap-idp-users-provisioning](https://github.com/RegestaItalia/regesta.devops.terraform.modules.sap-idp-users-provisioning) |
