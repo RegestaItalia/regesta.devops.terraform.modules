@@ -76,17 +76,39 @@ Tutti i moduli sono stati aggiornati per utilizzare le ultime versioni disponibi
 
 ## 🍳 Cookbooks Disponibili
 
-Le **cookbooks** sono ricette Terraform complete che orchestrano più moduli per implementare architetture end-to-end.
+Le **cookbooks** sono ricette Terraform complete che orchestrano più moduli per implementare architetture end-to-end. Visita il [repository cookbooks](https://github.com/RegestaItalia/regesta.devops.terraform.cookbooks) per il codice completo.
 
-### Landscape Creation
-Creazione automatizzata di un landscape completo BTP con:
-- Subaccount per ambienti (Dev, Quality, Prod - configurabile)
-- Subaccount dedicato per Transport Management
-- Cloud Foundry per ogni subaccount
-- Content Agent in ogni ambiente
-- cTMS centralizzato con destinations verso tutti gli ambienti
+| Cookbook | Descrizione | Cosa Crea | Tempo | Documentazione |
+|----------|-------------|-----------|-------|----------------|
+| **landscape-creation** | Setup automatizzato landscape multi-ambiente con transport layer | 2-4 subaccount (Dev/QA/Prod + Transport), Cloud Foundry, Content Agent, cTMS, Destinations | ~20-30 min | [📖 README](https://github.com/RegestaItalia/regesta.devops.terraform.cookbooks/tree/main/landscape-creation) |
 
-**Tempo di provisioning**: ~20-30 minuti vs 4-6 ore manualmente
+### Landscape Creation - Dettaglio
+
+**Problema risolto**: Setup manuale di landscape completo richiede 4-6 ore. Con questa cookbook: 20-30 minuti.
+
+**Architettura**:
+- **Two-Tier**: Dev, Prod + Transport subaccount
+- **Three-Tier**: Dev, Quality, Prod + Transport subaccount
+
+**Per ogni ambiente**:
+- ✅ Subaccount BTP dedicato
+- ✅ Cloud Foundry environment con org e space
+- ✅ Content Agent con destination verso cTMS
+- ✅ Role collections configurate
+
+**Subaccount Transport**:
+- ✅ cTMS centralizzato (alm-ts + transport service)
+- ✅ Destinations verso ogni Content Agent
+- ✅ Service key per integrazioni
+
+**Utilizzo**:
+```bash
+git clone https://github.com/RegestaItalia/regesta.devops.terraform.cookbooks.git
+cd regesta.devops.terraform.cookbooks/landscape-creation
+cp terraform.tfvars.example terraform.tfvars
+# Configura le variabili in terraform.tfvars
+terraform init && terraform apply
+```
 
 **[📖 Documentazione completa →](https://github.com/RegestaItalia/regesta.devops.terraform.cookbooks/tree/main/landscape-creation)**
 
