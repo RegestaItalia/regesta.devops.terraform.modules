@@ -21,7 +21,6 @@ Ricette complete che orchestrano più moduli per implementare architetture end-t
 | **Scopo** | Provisioning atomico di singole risorse | Orchestrazione di architetture complete |
 | **Complessità** | Bassa - 1 risorsa/servizio | Alta - più moduli + logica business |
 | **Esempio** | Creare un Content Agent | Creare landscape completo (Dev/QA/Prod + Transport) |
-| **Repository** | [regesta.devops.terraform](https://github.com/RegestaItalia/regesta.devops.terraform) | [regesta.devops.terraform.cookbooks](https://github.com/RegestaItalia/regesta.devops.terraform.cookbooks) |
 
 ---
 
