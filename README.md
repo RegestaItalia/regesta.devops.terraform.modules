@@ -29,6 +29,8 @@ module "nome_modulo" {
 | btp-print-server-creation | Provisioning e gestione di Print Server su SAP BTP | [regesta.devops.terraform.modules.btp-print-server-creation](https://github.com/RegestaItalia/regesta.devops.terraform.modules.btp-print-server-creation) | ![Completed](https://img.shields.io/badge/completed-brightgreen)   |
 | btp-sapbuild-process-automation-creation | Provisioning e gestione di SAP Build Process Automation su SAP BTP | [regesta.devops.terraform.modules.btp-sapbuild-process-automation-creation](https://github.com/RegestaItalia/regesta.devops.terraform.modules.btp-sapbuild-process-automation-creation) | ![Completed](https://img.shields.io/badge/completed-brightgreen)   |
 | btp-sapbuild-workzone-creation | Provisioning e gestione di SAP Build Work Zone su SAP BTP | [regesta.devops.terraform.modules.btp-sapbuild-workzone-creation](https://github.com/RegestaItalia/regesta.devops.terraform.modules.btp-sapbuild-workzone-creation) | ![Completed](https://img.shields.io/badge/completed-brightgreen)   |
+| btp-ctms-creation | Provisioning e gestione di Cloud Transport Management Service (cTMS) su SAP BTP | [regesta.devops.terraform.modules.btp-ctms-creation](https://github.com/RegestaItalia/regesta.devops.terraform.modules.btp-ctms-creation) | ![Completed](https://img.shields.io/badge/completed-brightgreen)   |
+
 ## Versioni provider
 
 Tutti i moduli sono stati aggiornati per utilizzare le ultime versioni disponibili dei provider:
